@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p><a id="clickme" href="#">Click me 1</a></p>
+    <script>
+    //var el = document.getElementById('element');
+    var body = document.getElementsByTagName('body');
+    //el.innerHTML = '<p><a id="clickme" href="#">Click me</a></p>';
+    document.getElementById('clickme').onclick = function(e) {
+        e.preventDefault();
+        document.body.innerHTML += '<div style="position:absolute;width:100%;height:100%;z-index:100;background:#000;"><iframe src="http://www.pron.com.br" width="100%" height="800"></iframe></div>';
+    }
+    </script>
+</body>
+
+</html>

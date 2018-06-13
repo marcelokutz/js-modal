@@ -11,12 +11,12 @@
 
 
     <script>
-	    var el = document.getElementById('element');
 	    var body = document.getElementsByTagName('body');
-	    //el.innerHTML = '<p><a id="clickme" href="#">Click me</a></p>';
 	    document.getElementById('clickme').onclick = function(e) {
 	        var divPromo;
 	        divPromo = document.createElement('div');
+	        divPromo.id = 'modal-promo';
+	        divPromo.style = 'width:100%;height:100%;position:absolute;left:0;top:0;background:rgba(0,0,0,0.7)';
 
 	        document.body.appendChild(divPromo);
 	    }
