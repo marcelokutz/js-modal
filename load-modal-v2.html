@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <div id="element">Testing</div>
+    <p><a id="clickme" href="#">Click me 1</a></p>
+
+
+    <script>
+	    var el = document.getElementById('element');
+	    var body = document.getElementsByTagName('body');
+	    //el.innerHTML = '<p><a id="clickme" href="#">Click me</a></p>';
+	    document.getElementById('clickme').onclick = function(e) {
+	        var divPromo;
+	        divPromo = document.createElement('div');
+
+	        document.body.appendChild(divPromo);
+	    }
+    </script>
+</body>
+
+</html>
