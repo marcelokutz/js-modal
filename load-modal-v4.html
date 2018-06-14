@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p><a id="clickme" href="#" onclick="openModalPromo()">Click me 1</a></p>
+    <h1>Teste</h1>
+    <script>
+        var body = document.getElementsByTagName('body');
+        createModalPromo();        
+        function openModalPromo() {
+            document.getElementById("modal-promo").style.display = "block";
+            return false;
+        }
+        function createModalPromo() {
+            document.body.innerHTML += '<div id="modal-promo" style="display:none;position:fixed;left:0;top:0;width:100%;height:100%;z-index:100;background:rgba(0,0,0,0.7);"><a href="#fechar" id="btclosemodal" onclick="closeModalPromo()">x</a><iframe src="http://www.pron.com.br" width="100%" height="800"></iframe></div>';
+        }    
+        function closeModalPromo() {
+            document.getElementById("modal-promo").style.display = "none";
+            return false;
+        }
+    </script>
+</body>
+
+</html>
